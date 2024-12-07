@@ -1,0 +1,63 @@
+.select-wrapper {
+  position: relative;
+  min-width: 25rem;
+  width: 100%;
+  max-width: 35vw;
+}
+
+.select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 0.0625rem solid #e0e0e0;
+  border-radius: 0.625rem;
+  background-color: #fff;
+  color: #2C3E50;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.select:hover {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.125rem rgba(52,152,219,0.1);
+}
+
+.select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.125rem rgba(52,152,219,0.2);
+}
+
+.select option {
+  padding: 0.625rem;
+  white-space: normal;
+  font-size: 0.875rem;
+}
+
+/* Responsive design */
+@media (max-width: 48rem) { /* 768px */
+  .select-wrapper {
+    min-width: 20rem;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 30rem) { /* 480px */
+  .select-wrapper {
+    min-width: 15rem;
+    max-width: 95vw;
+  }
+  
+  .select {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+  
+  .select option {
+    padding: 0.5rem;
+    font-size: 0.8125rem;
+  }
+}
