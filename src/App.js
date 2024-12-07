@@ -138,7 +138,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/real-estate-agency"> {/* <-- Ajout du basename pour GitHub Pages */}
       <div className="App" style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
         <nav className="nav-container">
           <div className="nav-content">
