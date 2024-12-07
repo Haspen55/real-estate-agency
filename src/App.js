@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes  , HashRouter} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import PropertyDetail from './components/PropertyDetail';
 import ContactForm from './components/ContactForm';
@@ -138,7 +138,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/real-estate-agency">
+    <HashRouter basename="/real-estate-agency">
       <div className="App" style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
         <nav className="nav-container">
           <div className="nav-content">
@@ -175,7 +175,7 @@ function App() {
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
